@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="src/css.css">
+    <style>
+        .slide{
+            position: absolute;
+        }
+        span{z-index: 999;}
+    </style>
+
+</head>
+<body>
+    <div class ="container_wrap">
+        <ul class = "container">
+            <li class="slide"><img src="image/1.png"/></li>
+            <li class="slide"><img src="image/2.png"/></li>
+            <li class="slide"><img src="image/3.png"/></li>
+            <li class="slide"><img src="image/4.png"/></li>
+            <li class="slide"><img src="image/5.png"/></li>
+        </ul>
+        <span class="prev"> < </span>
+        <span class="next"> > </span>
+    </div>
+</body>
+    <script data-main="src/require.config" src="src/require.js"></script>
+</html>
