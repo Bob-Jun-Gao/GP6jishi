@@ -25,5 +25,15 @@
         <span class="next"> > </span>
     </div>
 </body>
-    <script data-main="src/require.config" src="src/require.js"></script>
+    <!--<script data-main="src/require.config" src="src/require.js"></script>-->
+<script  src="src/require.js"></script>
+<script>
+    require(["src/require.config"],function(){
+        require(["jquery","banner"],function(){
+            console.log($.banner);
+            $.banner()
+        })
+    })
+</script>
+
 </html>

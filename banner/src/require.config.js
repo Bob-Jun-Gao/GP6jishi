@@ -2,16 +2,17 @@ require.config({
     baseUrl : "./",
     paths : {
         "jquery" : "src/jquery-3.3.1",
-        // "JQbanner" : "src/jquery.banner"
+        "banner" : "src/banner"
     },
-    // shim:{
-    //     "JQbanner" :{
-    //         deps:["jquery"]
-    //     },
-    // }
+    shim:{
+        "banner" :{
+            deps:["jquery"]
+        },
+    }
 })
-require(["src/banner"],function(){
-    // var a = new banner({
-    //
-    // })
-})
+// require(["src/banner"],function(){
+//     $.banner();
+//     // var a = new banner({
+//     //
+//     // })
+// })
